@@ -15,7 +15,7 @@ public class HelloResource {
     @GET
     @Produces("text/plain")
     public String hello() throws NamingException {
-        InitialContext ctx ;
+        InitialContext ctx = null;
         BeanRemote beanRemote ;
 
             ctx = new InitialContext();
